@@ -61,7 +61,6 @@ const Chessboard = function () {
     }
     return (
         <div>
-            <div >n:{n}</div>
             {cells.map((items, row) => <div key={row} className="row">
                 {items.map((item, col) => <div key={col} className="col">
                     <Cell text={item} onClick={() => onClickCell(row, col)} />
