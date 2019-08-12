@@ -25,6 +25,7 @@ const Bottom = (
         Button
     </div>
 )
+// 函数组件
 const Bottom2 = function () {
     const [n, setN] = React.useState(0) // 初始化
     return (
@@ -36,6 +37,14 @@ const Bottom2 = function () {
         </div>
     )
 }
+// 类组件
+class Bottom3 extends React.Component {
+    render() {
+        return (
+            <div>bottom 3</div>
+        )
+    }
+}
 
 const div = (
     <div>
@@ -46,6 +55,7 @@ const div = (
             <span>hi</span>
         </p>
         <Bottom2 />
+        <Bottom3 />
     </div >
 )
 
